@@ -27,9 +27,12 @@ for i in range(0,no_of_rounds) :
     sump2 = p2_1 + p2_1
     if dict[sump1] < dict[sump2] :
         p1 += 1
-    else :
+    elif dict[sump1] > dict[sump2] :
         p2 += 1
-    
+    else :
+        p1 += 1
+        p2 += 1
+        
 if p1 > p2:
     print("Player1")
 elif p2 > p1 :
